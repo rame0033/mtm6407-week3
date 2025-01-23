@@ -1,0 +1,41 @@
+@use 'variables';
+
+//Nesting demo - navigation
+nav {
+    padding: 1rem;
+    width: 100%;
+    max-height: 1.5rem;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Logo
+    .logo {
+        font: 1.5rem $font-primary;
+        color: white;
+        padding: 0.5rem;
+    }
+
+    // Navigation links
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+
+        // Unordered list
+        ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+
+            //Anchor or link
+            li a {
+                font: 1.25rem $font-primary;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
